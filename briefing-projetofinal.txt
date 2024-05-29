@@ -1,0 +1,16 @@
+briefing - projeto final 
+
+A página principal terá uma logo e um menu. 
+No menu terá 4 páginas (Início, Sobre nós, Nossos Serviços, Endereço e Contato)
+Uma imagem de fundo sobre o tema de serralheria
+Uma breve descrição que atendemos Itapetininga 
+um botão para solicitar orçamento no WhatsApp
+Mais abaixo terá uma descrição sobre os serviços que oferecemos 
+e a qualidade dos serviços e algumas imagens de serviços realizados
+
+O conteúdo pode ser carregado dinamicamente 
+à medida que o usuário navega pela página inicial. 
+No rodapé terá as redes sociais as formas de contato e o mesmo menu superior para
+facilitar a navegação do usuário. 
+
+ 

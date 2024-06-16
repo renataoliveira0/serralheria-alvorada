@@ -1,0 +1,97 @@
+.intro{
+    background-image: url(./img/grades/imggrade1.png);
+    height: 600px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.intro h1 {
+    font-size: 40px; /* Tamanho do texto h1 */
+    margin-bottom: 10px; /* Espaçamento opcional entre h1 e p */
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.intro p {
+    font-size: 20px; /* Tamanho do texto p */
+    color: #fff;
+    position: absolute;
+    top:60%;
+    left: 40%;
+}
+.sessaoIndex {
+    text-align: center;
+}
+
+.sessaoIndex h2{
+    text-align: center;
+    margin: 50px;
+}
+
+.item {
+    display: flex;
+    
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.item img {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+
+.contatoElementos{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 50px;
+    align-items: center;
+}
+
+
+
+
+.contatoElementos article {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 350px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    
+}
+
+.contatoElementos article:hover {
+    background-color: #fa4704;
+    color: #fff;
+}
+
+.contatoElementos h3 {
+    margin-top: 0;
+}
+
+.contatoElementos p{
+    text-align: center;
+}
+
+.contato{
+    text-align: center;
+}
+
+.contato h1 {
+    font-size: 32px; /* Tamanho do texto h1 */
+    margin: 20px; /* Espaçamento opcional entre h1 e p */
+   
+}
+
+.contato p {
+    font-size: 20px; /* Tamanho do texto p */
+    
+   
+}

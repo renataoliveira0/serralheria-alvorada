@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+
+.linhaTopo {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #fa4704;
+    width: 100%;
+    padding: 5px 0px;
+ 
+}
+
+.linhaTopo p {
+    margin: 0px 20px;
+}
+
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px; /* Ajuste conforme necessário */
+    margin: 0px 10px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens do menu à direita */
+}
+
+nav li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Cor do texto do menu */
+    padding: 5px 10px;
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave para as mudanças de cor */
+}
+
+nav a:hover {
+    background-color: #fa4704; /* Cor de fundo do botão quando o mouse passa por cima */
+    color: white; /* Cor do texto do botão quando o mouse passa por cima */
+}
+
+.whatsappBotaoFixo {
+    display: flex; /* Torna o container flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Coloca o botão do WhatsApp na frente de outros elementos */
+    background-color: #00bb2d; /* Cor de fundo do botão do WhatsApp */
+    color: white; /* Cor do texto do botão do WhatsApp */
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    max-width: 250px; /* Define o tamanho máximo do botão */
+}
+
+.whatsappBotaoFixo img {
+    max-width: 20px; /* Ajusta o tamanho da imagem conforme necessário */
+    height: auto;
+    vertical-align: middle; /* Alinha a imagem verticalmente ao centro */
+    margin-right: 5px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.rodape{
+    margin: 10px 0px;
+    padding: 20px;
+    border-top: 2px solid #fa4704;
+    width: 100%;
+    font-size: 14px;
+
+
+}
+.rodape p {
+    margin: 0;
+}
+.rodape-menu {
+    margin-top: 30px; /* Espaço entre o parágrafo e o menu */
+}
+.rodape {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+.rodape-menu a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+   
+}
+.rodape-menu a:hover {
+    color: #fff;
+    
+    background-color: #fa4704;
+}
+
+main {
+    padding: 0px 30px;
+}
+

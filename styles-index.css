@@ -33,7 +33,6 @@
 
 .item {
     display: flex;
-    
     margin-bottom: 30px;
     align-items: center;
 }
@@ -49,7 +48,6 @@
 .contatoElementos{
     display: flex;
     justify-content: space-between;
-    
     padding: 50px;
     align-items: center;
 }
@@ -67,6 +65,7 @@
     text-align: center;
     
 }
+
 
 .contatoElementos article:hover {
     background-color: #fa4704;

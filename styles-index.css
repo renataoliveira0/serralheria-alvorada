@@ -22,19 +22,15 @@
     top:60%;
     left: 40%;
 }
-.sessaoIndex {
-    text-align: center;
-}
 
 .sessaoIndex h2{
-    text-align: center;
     margin: 50px;
 }
 
 .item {
     display: flex;
     margin-bottom: 30px;
-    align-items: center;
+    
 }
 
 .item img {
@@ -42,6 +38,7 @@
     height: 400px;
     border-radius: 5px;
     border: 1px solid #cccccc;
+    align-items: right;
 }
 
 

@@ -1,7 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -14,7 +13,8 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    left:0;
+    z-index: 2000; 
 }
 
 
@@ -79,7 +79,7 @@ nav a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; /* Coloca o botão do WhatsApp na frente de outros elementos */
+    z-index: 1000;  /* Coloca o botão do WhatsApp na frente de outros elementos */
     background-color: #00bb2d; /* Cor de fundo do botão do WhatsApp */
     color: white; /* Cor do texto do botão do WhatsApp */
     padding: 10px;

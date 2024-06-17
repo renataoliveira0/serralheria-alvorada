@@ -1,7 +1,6 @@
 
 .container {
     display: flex;
-    align-items: flex-start;
     gap: 30px; /* Espaço entre o texto e a imagem */
     margin: 0 10px;
 }

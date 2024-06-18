@@ -77,8 +77,8 @@ nav a:hover {
     display: flex; /* Torna o container flexível */
     align-items: center; /* Alinha os itens verticalmente */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     z-index: 1000;  /* Coloca o botão do WhatsApp na frente de outros elementos */
     background-color: #00bb2d; /* Cor de fundo do botão do WhatsApp */
     color: white; /* Cor do texto do botão do WhatsApp */

@@ -33,6 +33,7 @@
     justify-content: space-between;
     padding: 50px;
     align-items: center;
+    margin: 50px;
 }
 
 
@@ -69,8 +70,9 @@
 
 .contato h1 {
     font-size: 32px; /* Tamanho do texto h1 */
+    margin-top: 40px; /* Espaçamento opcional entre h1 e p */
     margin: 20px; /* Espaçamento opcional entre h1 e p */
-   
+
 }
 
 .contato p {

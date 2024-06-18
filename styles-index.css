@@ -1,26 +1,23 @@
-.intro{
+.intro {
     background-image: url(./img/grades/imggrade1.png);
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
-    
 }
 
 .intro h1 {
-    font-size: 40px; /* Tamanho do texto h1 */
-    margin-bottom: 10px; /* Espaçamento opcional entre h1 e p */
+    font-size: 50px; /* Tamanho do texto h1 */
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 25%;
 }
 
 .intro p {
-    font-size: 20px; /* Tamanho do texto p */
     color: #fff;
-    position: absolute;
-    top:60%;
-    left: 40%;
+    margin-top: 10px; /* Espaçamento opcional entre h1 e p */
+    font-size: 25px;
 }
 
 .sessaoIndex h2{

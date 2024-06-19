@@ -136,7 +136,6 @@ nav a:hover {
     background-color: #fa4704;
 }
 
-main {
-    padding: 0px 30px;
+.container{
+    margin: 20px;
 }
-

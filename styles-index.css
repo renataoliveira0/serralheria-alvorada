@@ -1,4 +1,26 @@
+
+/* Container Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "intro"
+        "services"
+        "contato"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Definição das áreas do grid */
+header {
+    grid-area: header;
+}
+
 .intro {
+    grid-area: intro;
     background-image: url(./img/grades/imggrade1.png);
     height: 600px;
     display: flex;
@@ -20,35 +42,47 @@
     font-size: 25px;
 }
 
-.sessaoIndex h2{
+.services {
+    grid-area: services;
+}
+
+.sessaoIndex h2 {
     margin: 50px;
     font-size: 35px;
     text-align: center;
 }
 
+.contato {
+    grid-area: contato;
+    text-align: center;
+}
 
+.contato h1 {
+    font-size: 32px; /* Tamanho do texto h1 */
+    margin-top: 40px; /* Espaçamento opcional entre h1 e p */
+    margin: 20px; /* Espaçamento opcional entre h1 e p */
+}
 
-.contatoElementos{
+.contato p {
+    font-size: 20px; /* Tamanho do texto p */
+}
+
+.contatoElementos {
     display: flex;
     justify-content: space-between;
     padding: 50px;
     align-items: center;
 }
 
-
-
-
 .contatoElementos article {
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
     width: 350px;
-    height: 80px;
+    height: 100px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     text-align: center;
-    
 }
-
 
 .contatoElementos article:hover {
     background-color: #fa4704;
@@ -59,39 +93,37 @@
     margin-top: 0;
 }
 
-.contatoElementos p{
+.contatoElementos p {
     text-align: center;
 }
 
-.contato{
+footer {
+    grid-area: footer;
     text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
-.contato h1 {
-    font-size: 32px; /* Tamanho do texto h1 */
-    margin-top: 40px; /* Espaçamento opcional entre h1 e p */
-    margin: 20px; /* Espaçamento opcional entre h1 e p */
-
+.rodape-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
 }
 
-.contato p {
-    font-size: 20px; /* Tamanho do texto p */
-    
-   
+.rodape-menu a:hover {
+    text-decoration: none;
 }
-
 
 
 ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
 
 strong {

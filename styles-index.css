@@ -1,4 +1,3 @@
-
 /* Container Grid Layout */
 .container {
     display: grid;
@@ -19,6 +18,52 @@ header {
     grid-area: header;
 }
 
+/* Responsividade da linha do topo */
+.linhaTopo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+}
+
+.linhaTopo p {
+    margin: 0;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 180px;
+}
+
+.menuTopo ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo li {
+    margin-left: 20px;
+}
+
+.menuTopo a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.menuTopo a:hover {
+    color: #fa4704;
+}
+
+/* Responsividade do conteúdo principal */
 .intro {
     grid-area: intro;
     background-image: url(./img/grades/imggrade1.png);
@@ -114,7 +159,6 @@ footer {
     text-decoration: none;
 }
 
-
 ul {
     margin: 0;
     padding: 0;
@@ -149,4 +193,171 @@ li img {
     text-align: center;
     width: 500px;
     font-size: 25px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    .sessaoIndex h2 {
+        font-size: 30px;
+    }
+
+    .contato h1 {
+        font-size: 28px;
+    }
+
+    .contato p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .contatoElementos {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contatoElementos article {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .sessaoIndex h2 {
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    .servico-descricao {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .contato h1 {
+        font-size: 24px;
+    }
+
+    .contato p {
+        font-size: 16px;
+    }
+
+    .servico {
+        margin: 50px 20px;
+    }
+
+    .servico-descricao {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .linhaTopo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        height: auto;
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .sessaoIndex h2 {
+        font-size: 20px;
+    }
+
+    .contato h1 {
+        font-size: 20px;
+    }
+
+    .contato p {
+        font-size: 14px;
+    }
+
+    .contatoElementos {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contatoElementos article {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .rodape-menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    li img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .servico {
+        margin: 20px;
+    }
+
+    .servico-descricao {
+        font-size: 16px;
+        width: 100%;
+    }
 }

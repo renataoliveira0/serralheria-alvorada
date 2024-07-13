@@ -11,6 +11,8 @@
         "footer";
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Definição das áreas do grid */
@@ -60,8 +62,9 @@ header {
 }
 
 .menuTopo a:hover {
-    color: #fa4704;
+    color: #fff;
 }
+
 
 /* Responsividade do conteúdo principal */
 .intro {

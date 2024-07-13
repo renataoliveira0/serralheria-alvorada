@@ -150,6 +150,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #f1f1f1;
+    margin-top: 20px; /* Espaço extra acima do rodapé */
 }
 
 .rodape-menu a {

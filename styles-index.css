@@ -20,50 +20,6 @@ header {
     grid-area: header;
 }
 
-/* Responsividade da linha do topo */
-.linhaTopo {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f8f8f8;
-    flex-wrap: wrap;
-}
-
-.linhaTopo p {
-    margin: 0;
-}
-
-.headerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo img {
-    max-width: 180px;
-}
-
-.menuTopo ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menuTopo li {
-    margin-left: 20px;
-}
-
-.menuTopo a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.menuTopo a:hover {
-    color: #fff;
-}
 
 
 /* Responsividade do conteúdo principal */
@@ -102,65 +58,6 @@ header {
 
 .contato {
     grid-area: contato;
-    text-align: center;
-}
-
-.contato h1 {
-    font-size: 32px; /* Tamanho do texto h1 */
-    margin-top: 40px; /* Espaçamento opcional entre h1 e p */
-    margin: 20px; /* Espaçamento opcional entre h1 e p */
-}
-
-.contato p {
-    font-size: 20px; /* Tamanho do texto p */
-}
-
-.contatoElementos {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    align-items: center;
-}
-
-.contatoElementos article {
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    width: 350px;
-    height: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-align: center;
-}
-
-.contatoElementos article:hover {
-    background-color: #fa4704;
-    color: #fff;
-}
-
-.contatoElementos h3 {
-    margin-top: 0;
-}
-
-.contatoElementos p {
-    text-align: center;
-}
-
-footer {
-    grid-area: footer;
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    margin-top: 20px; /* Espaço extra acima do rodapé */
-}
-
-.rodape-menu a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
-}
-
-.rodape-menu a:hover {
-    text-decoration: none;
 }
 
 ul {
@@ -197,6 +94,11 @@ li img {
     text-align: center;
     width: 500px;
     font-size: 25px;
+}
+
+
+footer {
+    grid-area: footer;    
 }
 
 /* Media Queries para responsividade */

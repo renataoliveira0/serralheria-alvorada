@@ -1,12 +1,129 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset CSS */
+body, html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Container Grid Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "intro"
+        "services"
+        "contato"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Definição das áreas do grid */
+header {
+    grid-area: header;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade da linha do topo */
+.linhaTopo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+}
+
+.linhaTopo p {
+    margin: 0;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 180px;
+}
+
+.menuTopo ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo li {
+    margin-left: 20px;
+}
+
+.menuTopo a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.menuTopo a:hover {
+    color: #fa4704;
+}
+
+/* Responsividade do conteúdo principal */
+.intro {
+    grid-area: intro;
+    background-image: url(../img/grades/imggrade1.png);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.intro h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.intro p {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Estilos da Seção "Sobre nós" */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
 
 .container {
     display: flex;
-    gap: 30px; /* Espaço entre o texto e a imagem */
+    gap: 30px;
     margin: 0 10px;
 }
-
-
-
 
 .imagem img {
     width: 100%;
@@ -14,21 +131,8 @@
     border-radius: 5px;
 }
 
-.container h3{
+.container h3 {
     margin-bottom: 10px;
-}
-
-
- h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
- .textoSobre h3 {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #333;
 }
 
 .textoSobre {
@@ -48,5 +152,161 @@
 
 .textoSobre ul li strong {
     color: #333;
+}
+
+/* Responsividade para a seção "Sobre nós" */
+@media (max-width: 1200px) {
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .imagem img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .textoSobre {
+        font-size: 14px;
+    }
+
+    .textoSobre h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .textoSobre ul {
+        padding-left: 20px;
+    }
+
+    .textoSobre ul li {
+        margin-bottom: 5px;
+    }
+
+    .textoSobre ul li strong {
+        color: #333;
+    }
+
+    section h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .linhaTopo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        height: auto;
+        padding: 20px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .menuTopo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Rodapé */
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.rodape-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.rodape-menu a:hover {
+    text-decoration: none;
+}
+
+/* Botão fixo do WhatsApp */
+.whatsappBotaoFixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #00bb2d;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    max-width: 280px;
+}
+
+.whatsappBotaoFixo img {
+    max-width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 

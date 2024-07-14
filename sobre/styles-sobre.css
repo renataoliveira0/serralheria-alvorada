@@ -11,36 +11,7 @@ body, html {
     font-size: 16px;
 }
 
-/* Container Grid Layout */
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 
-        "header"
-        "intro"
-        "services"
-        "contato"
-        "footer";
-    gap: 20px;
-    padding: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-}
 
-/* Responsividade do conteúdo principal */
-.intro {
-    grid-area: intro;
-    background-image: url(../img/grades/imggrade1.png);
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-}
 
 .intro h1 {
     font-size: 50px;

@@ -1,5 +1,5 @@
 /* Container Grid Layout */
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
@@ -13,16 +13,16 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 /* Definição das áreas do grid */
-header {
+/* header {
     grid-area: header;
-}
+} */
 
 /* Responsividade do conteúdo principal */
 .intro {
-    grid-area: intro;
+    /* grid-area: intro; */
     background-image: url(./img/grades/imggrade1.png);
     height: 600px;
     display: flex;
@@ -54,9 +54,9 @@ header {
     text-align: center;
 }
 
-.contato {
+/* .contato {
     grid-area: contato;
-}
+} */
 
 ul {
     margin: 0;
@@ -93,10 +93,10 @@ li img {
     width: 500px;
     font-size: 25px;
 }
-
+/* 
 footer {
     grid-area: footer;    
-}
+} */
 
 /* Media Queries para responsividade */
 @media (max-width: 1200px) {

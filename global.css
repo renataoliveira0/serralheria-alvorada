@@ -22,7 +22,9 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
-    left:0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros conteúdos ao fixar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
 }
 
 

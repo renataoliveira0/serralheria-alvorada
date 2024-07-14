@@ -22,8 +22,7 @@ header {
     background-color: white;
     position: sticky;
     top: 0;
-    left: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    left:0;
 }
 
 
@@ -39,7 +38,6 @@ header {
     width: 100%;
     padding: 5px 0px;
     flex-wrap: wrap;
-    position: sticky;
 }
 
 .linhaTopo p {
@@ -53,7 +51,6 @@ header {
     padding: 10px 0px; 
     margin: 0px 10px;
     flex-wrap: wrap;
-    position: sticky;
 }
 
 

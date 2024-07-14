@@ -186,6 +186,7 @@ nav a:hover {
     border-top: 2px solid #fa4704;
     width: 100%;
     font-size: 14px;
+    text-align: center;
 
 
 }
@@ -195,25 +196,25 @@ nav a:hover {
 .rodape-menu {
     margin-top: 30px; /* Espaço entre o parágrafo e o menu */
 }
-.rodape {
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px; /* Espaço extra acima do rodapé */
-}
+
 .rodape-menu a {
     color: #333;
     text-decoration: none;
     margin: 0 10px;
     padding: 5px 10px;
+    display: inline-block;
 
    
 }
-.rodape-menu a:hover {
-    color: #fff;
-    
-    background-color: #fa4704;
+
+.rodape-menu img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.rodape-menu a:hover img {
+    transform: scale(1.1);
 }
 
 

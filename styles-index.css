@@ -94,9 +94,9 @@ li img {
     font-size: 25px;
 }
  
-footer {
+/* footer {
     grid-area: footer;    
-} 
+}  */
 
 /* Media Queries para responsividade */
  @media (max-width: 1200px) {

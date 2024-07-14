@@ -1,5 +1,5 @@
 /* Container Grid Layout */
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
@@ -13,16 +13,16 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-} 
+}  */
 
 /* Definição das áreas do grid */
-header {
+/* header {
     grid-area: header;
-} 
+}  */
 
 /* Responsividade do conteúdo principal */
 .intro {
-    grid-area: intro; 
+    /* grid-area: intro;  */
     background-image: url(./img/grades/imggrade1.png);
     height: 600px;
     display: flex;
@@ -44,9 +44,9 @@ header {
     font-size: 25px;
 }
 
-.services {
+/* .services {
     grid-area: services;
-}
+} */
 
 .sessaoIndex h2 {
     margin: 50px;
@@ -54,9 +54,9 @@ header {
     text-align: center;
 }
 
-.contato {
+/* .contato {
     grid-area: contato;
-} 
+}  */
 
 ul {
     margin: 0;

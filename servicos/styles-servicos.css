@@ -127,3 +127,67 @@ h1 {
 .seta:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Responsividade para a seção "Serviços" */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuTopo li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-item img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .product-link {
+        padding: 8px 16px;
+        margin: 3px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .product-submenu {
+        padding: 10px;
+    }
+
+    .product-link {
+        padding: 6px 12px;
+        margin: 2px;
+        font-size: 12px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .menuTopo li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
-//modal
 // Variáveis globais para controle das imagens
 var imagens = [];
 var indiceAtual = 0;
@@ -36,9 +34,11 @@ function openModal(image) {
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modalImage");
 
-    // Preencher o array de imagens
-    var galeriaImagens = document.querySelectorAll('#basculantes .product-image');
-    imagens = Array.from(galeriaImagens);
+    // Encontra a categoria da imagem clicada
+    var categoria = image.closest('.product-category');
+
+    // Preencher o array de imagens da categoria correspondente
+    imagens = Array.from(categoria.querySelectorAll('.product-image'));
 
     // Encontrar o índice da imagem clicada
     indiceAtual = imagens.findIndex(function(imagem) {
